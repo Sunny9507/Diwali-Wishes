@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali</title>
+    <link rel = "stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="hero-section">
+        <img src="/Diwali_wishes/images/design-5 1.png" alt="jhalar">
+        <div class="paragraph-and-audio">
+        
+            <p> Hi,
+                <br>
+                You mean the world to me...
+                So this Diwali, 
+                I made something for you!
+            </p>
+            <audio src="/Diwali_wishes/music/03_diwali-wishes_starter-code_music_wholeness.mp3" controls autoplay></audio>
+        </div>
+        <img class="first-deepak" src="/Diwali_wishes/images/deepak 1.png" alt="deepak">
+        <img class="second-deepak" src="/Diwali_wishes/images/deepak 1.png" alt="deepak">
+    </section>
+    <section class="lakshmi-ganesha-section">
+        <div class="horizontal-divider">
+            <div class="horizontal-line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizontal-line"> </div>
+        </div>
+        <img class="lakshmi-ganesha-img" src="/Diwali_wishes/images/lakshmi maa and ganesh ji 1.png" alt="lakshmi-ganesha">
+        <h2>Wishing You a Blessed and Prosperous Deepawali </h2>
+        <div class="horizontal-divider">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizontal-line"> </div>
+        </div>
+        <div class="white-card-container">
+            <div class="white-card">
+                <p>People say, "Diwali is the festival of lights."</p>
+                <p>You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m learning everyday, even today!</p>
+            </div>
+            <img class="little-girl" src="/Diwali_wishes/images/little-girl 1.png" alt="little-girl">
+        </div>
+        <div class="horizontal-divider">
+            <div class="horizontal-line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="lakshmi-ganesha-card">
+            <img class="both" src="/Diwali_wishes/images/Group 15.png">
+          </div>
+          <div class="thank-you-text">
+            <p>Happy Diwali and,</p>
+            <h2>Thank You For Everything..</h2>
+          </div>
+          <p class="my-name">Made with ❤ by <span id="sender"></span></p>
+    </section>
+    <script>
+        const receiverName = document.querySelector("#receiver");
+        const senderName = document.querySelector("#sender");
+        receiverName.innerText = new URLSearchParams(location.search).get(
+          "receiver"
+        );
+        senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Sunny';
+      </script>
+</body>
+</html>
